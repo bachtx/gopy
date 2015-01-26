@@ -1,0 +1,483 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+    font-family: "Myriad Pro";
+    src: url('../../regular.ttf');
+}
+
+body{
+    margin:0px;
+    padding:0px;
+    font-family: "Myriad Pro";
+    font-size: 13px;
+    line-height:100%;
+    background:url("../images/bg_body.jpg") repeat top center;
+}
+
+a{color:#333; text-decoration:none;}
+#body{
+    width: 1300px;
+    margin: auto;
+    background: url('../images/bg_backend.jpg') no-repeat;
+}
+
+
+div.wrapper{
+    width: 980px;
+    margin: auto;
+    overflow: hidden;
+}
+div.clr{ clear:both; height: 10px;}
+
+.header{
+    width: 100%;
+    height: 275px;
+    /*background: #008f8b;*/
+}
+.header .title{    
+    height: 40px;
+    width: 100%;
+    padding-top: 105px;
+}
+.header h3{
+    font-size: 18px;
+    text-transform: uppercase;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    word-spacing: 3px;
+    background: none repeat scroll 0 0 #008f8b;
+}
+
+
+
+#footer{
+    clear: both;
+    height: 39px;
+    background: #333;
+    margin: auto;
+    width: 1300px;
+    text-align: center;    
+}
+#footer span {
+    color: #fff;
+}
+#footer div{
+    padding-top: 5px;
+}
+
+
+
+/*////////////////////////*/
+.tab_control{
+    height: 32px;
+    position: relative;
+}
+
+ul.tab_menu{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+
+}
+ul.tab_menu li{
+    float: left;
+    height: 27px;
+    line-height: 27px;
+    border-top: 1px solid #00b8b3;
+    border-left: 1px solid #00b8b3;
+    border-right: 1px solid #00b8b3;
+    border-radius: 3px 3px 0px 0px;
+    padding: 2px 10px;
+    margin-right: 10px;
+    background: #00b8b3;
+}
+ul.tab_menu li{
+    font-weight: bold;
+    color: #fff;
+}
+ul.tab_menu li:hover{
+    cursor: pointer;
+}
+ul.tab_menu li.active {
+    background: #fff;
+    color: #333;
+}
+
+div.cm_content{
+    clear: both;
+    overflow: hidden;
+    padding: 5px 0px;
+}
+
+.hello_user, .tab_dk{
+    float: left;
+}
+.hello_user{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+.hello_user >strong{
+    margin-right: 10px;
+}
+
+.container {
+    border: 1px solid #00b8b3;
+    border-radius: 0 0 5px 5px;
+    clear: both;
+    overflow: hidden;
+}
+.col_time, .col_comment{
+    float: left;
+}
+.col_time{
+    width: 185px;
+    margin: 80px 0px 0px 0px;
+}
+
+.col_time .calendar{
+    margin: 0 28px;
+    height: 126px;
+    background: url('../images/Calendar.png') no-repeat;
+}
+
+.calendar .month{
+    color: #fff;
+    height: 40px;
+    line-height: 40px;
+    padding: 5px 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+
+}
+.calendar .day{
+    color: #fff;
+    line-height: 40px;
+    padding: 5px 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 55px;
+    color: #ec1c24;
+}
+.counter {
+    clear: both;
+    background: url('../images/Page.png') no-repeat;
+    height: 125px;
+    margin: 30px 28px 0;
+}
+.counter .tit_comment{
+    height: 35px;
+    color: #fff;
+    font-size: 12px;
+    padding-top: 16px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.counter .no_of{
+    color: #d48230;
+    font-size: 55px;
+    font-weight: bold;
+    line-height: 40px;
+    padding-top: 10px;
+    margin-left: 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.item_comment {
+    clear: both;
+    margin-top: 10px;
+}
+
+.left_top,.right_top{
+    float: left;
+}
+.item_comment .top_item{
+    height: 35px;    
+    width: 100%;
+    position: relative;
+}
+
+.top_item .remove_item{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    right: 0px;
+    top: 5px;
+    cursor: pointer;
+    background: url("../images/delete.png");
+}
+.item_comment .left_top{
+    background: none repeat scroll 0 0 #d48230;
+    color: #fff;
+    font-weight: bold;
+    height: 100%;
+    line-height: 35px;
+    margin-right: 2px;
+    text-align: center;
+    width: 50px;
+}
+.item_comment .right_top{
+    width: 725px;
+    background: #008f8b;
+    height: 100%;
+}
+.right_top .author, .right_top .time{
+    float: left;
+    line-height: 35px;
+    color: #fff;
+    font-weight: bold;
+}
+.right_top .time{    
+    float: right;
+    font-style: italic;    
+    margin-right: 30px;
+    text-align: right;
+}
+.right_top .author{
+    margin-left: 15px;
+}
+.bottom_item {
+    background: #fff;
+}
+.bottom_item .comment{
+    line-height: 20px;
+    color: #333;
+    /*height: 53px;*/
+    text-align: inherit;
+    overflow: hidden;
+    padding: 10px 0 10px 52px;
+}
+
+.bottom_item .over_word {
+    height: 73px;
+}
+
+.reply {
+    width: 100%;
+    border-top: 1px solid #d48230;
+    background: #eee;
+    height: 45px;
+    position: relative;
+}
+.scroll_dow,.scroll_top{
+    margin: auto;
+    width: 165px;
+    height: 27px;
+    line-height: 27px;
+    color: #fff;
+    font-weight: bold;
+    line-height: 25px;
+    background: #d48230;
+    text-align: center;   
+    cursor: pointer;
+}
+.scroll_dow{
+    border-radius: 0px 0px 5px 5px;
+}
+.scroll_top{
+    bottom: 0px;
+    position: absolute;
+    left: 306px;
+    border-radius: 5px 5px 0px 0px;
+}
+.btn_search{
+    background: url("../images/search.jpg") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    height: 28px;
+    margin-left: 10px;
+    width: 92px;
+    cursor: pointer;
+}
+
+
+
+/*Col Comment*/
+.col_comment{
+    width: 777px;
+    margin: 10px 0px;
+}
+
+.col_comment .item{
+    margin-bottom: 26px;
+    border-bottom: 1px solid #ccc;
+}
+
+.col_comment .item .time{
+    font-weight: bold;
+    color: #9c9a9b;
+    margin-left: 10px;
+}
+.col_comment .item .author{
+    margin-left: 8px;
+    color: #9c9a9b;
+    font-weight: bold;
+}
+.col_comment .item .author span{color: #424242;}
+.col_comment .item p{
+    line-height: 20px;
+}
+
+.filter{
+    width: 100%;
+    height: 35px;
+    background: #008f8b;
+
+}
+.filter span {
+    color: #fff;
+    font-weight: bold;
+    margin:0px 12px;
+}
+.filter .frm_search{
+    padding: 3px;
+}
+.filter input{
+    border: 0px;
+    border-radius: 3px;
+
+}
+.filter .txt_content{
+    margin-right: 3px;
+}
+.filter .txt_content{
+     width: 180px;
+}
+.filter .txt_content,.filter .from_date, .filter .to_date{
+    background: #e6f4f4;
+    height: 23px;
+    font-family: "Myriad Pro";
+}
+.filter .from_date,.filter .to_date{
+    width: 120px;
+}
+.filter .to_date{
+    margin-left: 5px;
+}
+.filter .refresh {
+  background: none repeat scroll 0 0 #d48230;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    font-family: Myriad Pro;
+    font-weight: bold;
+    height: 26px;
+    line-height: 26px;
+    margin-left: 10px;
+    margin-top: 1px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 92px;
+}
+.left_search,.refresh{float: left;}
+
+
+/*Tab config*/
+.frm #cmdsave{
+    height: 30px;
+    width: 100px;
+    background: #00b8b3;
+    color: #fff;
+    font-weight: bold;
+    border: 0px solid #ccc;
+    box-shadow: 0px 2px #ccc;
+    cursor: pointer;
+}
+.frm input, .frm textarea {
+    border: 0px;
+    background: #fff;
+}
+.frm input{
+    height: 25px;
+    line-height: 25px;
+}
+#frmpaging  ul{
+    margin-top: 10px;
+    padding: 0px;
+    list-style: none;
+    float: right;
+}
+#frmpaging ul li{
+   border: 1px solid #bfbfbf;
+    float: left;
+    height: 28px;
+    margin: 0 5px;
+    width: 28px;
+}
+#frmpaging ul li a{
+    line-height: 28px;
+    margin: 10px;
+    padding-top: 10px;
+    text-align: center;
+}
+#frmpaging li.cur_page{
+    border: 1px solid #f55728;
+}
+
+
+/*Style Form login*/
+div.main-login{
+    width: 100%;
+    height: 300px;
+}
+div.div_login{
+    border: 1px solid #ccc;
+    margin: 3px auto 150px;
+    padding: 21px 0;
+    width: 325px;
+}
+h3.title-login{
+    background: none repeat scroll 0 0 #008f8b;
+    border-radius: 7px 7px 0 0;
+    color: #ffffff;
+    font-weight: bold;
+    height: 25px;
+    line-height: 25px;
+    margin: 50px auto 0;
+    padding: 0;
+    text-indent: 10px;
+    text-transform: uppercase;
+    width: 327px;
+}
+.frm_login input{
+    border: 0px;
+    height: 20px;
+}
+.btn_login,.btn_cancel{
+    background: #008f8b;
+    color: #fff;
+    cursor: pointer;
+    font-family: Myriad Pro;
+}
+.btn_cancel{
+    width: 52px;
+}
+
+.logout-user {
+    float: right;
+    margin-right: 80px;
+    margin-top: 50px;
+    font-size: 13px;
+    color: #0091a7;
+}
+
+.logout-user a {margin-left: 10px;text-decoration: underline}
+
+td.bold_number {font-weight: bold;}
+
+.paging .cur_page {
+    border: 1px solid #25a5b8;
+    font-weight: bold;
+    padding: 1px;
+}
+.paging a {
+    margin: 3px 6px;
+}
+
+/*d48230*/
+/*008f8b*/
